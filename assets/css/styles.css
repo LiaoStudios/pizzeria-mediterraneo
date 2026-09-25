@@ -112,3 +112,13 @@ body {
   .reveal { opacity: 1; transform: none; transition: none; }
   .hover-lift, .spec-img { transition: none; }
 }
+
+/* Mobile/tablet: la foto della hero è lo sfondo, il blocco testo deve restare trasparente */
+@media (max-width: 1023px) {
+  .warm-bg { background: transparent; }
+  .hero-copy h1, .hero-copy p, .hero-copy span { text-shadow: 0 2px 16px rgba(0,0,0,.55); }
+}
+
+/* Pulsanti piattaforme di consegna (popup Ordina) */
+.platform-btn { transition: transform .25s ease, filter .25s ease, box-shadow .25s ease; box-shadow: 0 8px 18px -12px rgba(0,0,0,.5); }
+.platform-btn:hover { transform: translateY(-2px); filter: brightness(.94); }

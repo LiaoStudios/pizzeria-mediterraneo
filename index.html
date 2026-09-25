@@ -54,11 +54,12 @@
       "reviewCount": "193",
       "bestRating": "5"
     },
-    "url": "https://pizzeriamediterraneo-castelmaggiore.eatbu.com",
+    "url": "https://liaostudios.github.io/pizzeria-mediterraneo/",
+    "acceptsReservations": "https://www.google.com/maps/reserve/v/dine/c/AghEHZKES4Y?source=pa&opi=89978449&hl=it-IT",
     "hasDeliveryMethod": ["http://purl.org/goodrelations/v1#DeliveryModePickUp", "http://purl.org/goodrelations/v1#DeliveryModeOwnFleet"],
     "potentialAction": {
       "@type": "OrderAction",
-      "target": "https://pizzeriamediterraneo-castelmaggiore.eatbu.com",
+      "target": "https://pizzeriamediterraneo.order.app.hd.digital/menus",
       "deliveryMethod": ["http://purl.org/goodrelations/v1#DeliveryModePickUp", "http://purl.org/goodrelations/v1#DeliveryModeOwnFleet"]
     },
     "address": {
@@ -130,15 +131,18 @@
 
     <!-- Mobile nav -->
     <div id="mobile-nav" class="hidden lg:hidden mt-3 mx-auto max-w-[1280px] bg-nerosoft rounded-2xl shadow-xl border border-oro/20 p-4">
-      <a href="#hero" class="block px-4 py-3 rounded-lg font-600 text-crema/90 hover:bg-white/5">Home</a>
-      <a href="#farine" class="block px-4 py-3 rounded-lg font-600 text-crema/90 hover:bg-white/5">Le Farine</a>
-      <a href="#specialita" class="block px-4 py-3 rounded-lg font-600 text-crema/90 hover:bg-white/5">Le Pizze</a>
-      <a href="#menu" class="block px-4 py-3 rounded-lg font-600 text-crema/90 hover:bg-white/5">Menù</a>
-      <a href="#storia" class="block px-4 py-3 rounded-lg font-600 text-crema/90 hover:bg-white/5">Chi Siamo</a>
-      <a href="#contatti" class="block px-4 py-3 rounded-lg font-600 text-crema/90 hover:bg-white/5">Contatti</a>
+      <a href="#hero" class="block px-4 py-3 rounded-lg font-600 text-center text-crema/90 hover:bg-white/5">Home</a>
+      <a href="#farine" class="block px-4 py-3 rounded-lg font-600 text-center text-crema/90 hover:bg-white/5">Le Farine</a>
+      <a href="#specialita" class="block px-4 py-3 rounded-lg font-600 text-center text-crema/90 hover:bg-white/5">Le Pizze</a>
+      <a href="#menu" class="block px-4 py-3 rounded-lg font-600 text-center text-crema/90 hover:bg-white/5">Menù</a>
+      <a href="#storia" class="block px-4 py-3 rounded-lg font-600 text-center text-crema/90 hover:bg-white/5">Chi Siamo</a>
+      <a href="#contatti" class="block px-4 py-3 rounded-lg font-600 text-center text-crema/90 hover:bg-white/5">Contatti</a>
       <button type="button" onclick="window.openOrderModal()" class="js-order-btn btn-red mt-2 w-full flex items-center justify-center gap-2 px-5 py-3 rounded-full font-700 text-sm">
-        <iconify-icon icon="ph:phone-fill"></iconify-icon> Ordina ora
+        <iconify-icon icon="ph:shopping-bag-fill"></iconify-icon> Ordina ora
       </button>
+      <a href="https://www.google.com/maps/reserve/v/dine/c/AghEHZKES4Y?source=pa&amp;opi=89978449&amp;hl=it-IT" target="_blank" rel="noopener" class="btn-gold mt-2 w-full flex items-center justify-center gap-2 px-5 py-3 rounded-full font-700 text-sm">
+        <iconify-icon icon="ph:calendar-check-fill"></iconify-icon> Prenota un tavolo
+      </a>
     </div>
   </header>
 
@@ -148,29 +152,34 @@
       <!-- Sfondo foto: mobile/tablet -->
       <div class="absolute inset-0 lg:hidden">
         <img src="assets/img/hero.jpg" alt="Pizza gourmet con burrata, datterini e basilico" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-b from-nero/85 via-nero/80 to-nero/90"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-nero/60 via-nero/55 to-nero/85"></div>
       </div>
 
       <div class="relative lg:grid lg:grid-cols-2 lg:min-h-[calc(100vh-104px)]">
         <!-- Testo -->
-        <div class="warm-bg flex items-center min-h-[92svh] lg:min-h-0">
+        <div class="warm-bg hero-copy flex items-center min-h-[92svh] lg:min-h-0 text-center lg:text-left">
           <div class="w-full max-w-xl mx-auto lg:mx-0 px-6 md:px-12 lg:pl-16 lg:pr-10 py-14 lg:py-20">
-            <span class="inline-flex items-center gap-2 text-oro font-700 uppercase tracking-[0.25em] text-xs mb-6">
+            <span class="inline-flex items-center justify-center gap-2 text-oro font-700 uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[11px] sm:text-xs mb-6">
               <iconify-icon icon="ph:star-fill"></iconify-icon> Pizza d'autore · Castel Maggiore
             </span>
             <h1 class="font-display text-crema text-5xl sm:text-6xl lg:text-[60px] leading-[0.98] font-800 mb-5 lg:mb-6">
               Il gusto per<br>la <span class="font-script text-oro font-400 not-italic">qualità</span>.
             </h1>
-            <p class="text-sm sm:text-base lg:text-lg text-crema/80 max-w-lg mb-7 leading-relaxed border-l-2 border-oro pl-5">
+            <p class="text-sm sm:text-base lg:text-lg text-crema/90 lg:text-crema/80 max-w-lg mx-auto lg:mx-0 mb-7 leading-relaxed lg:border-l-2 lg:border-oro lg:pl-5">
               Impasti a lunga lievitazione, da 48 a 72 ore. <strong class="text-crema">Scegli la farina</strong> della tua pizza e affidati alle creazioni gourmet di Davide Leoci, Sensory Pizza Chef. Asporto e consegna a domicilio a Castel Maggiore.
             </p>
-            <div class="flex flex-wrap gap-4 mb-8">
-              <a href="#menu" class="btn-gold px-8 py-4 rounded-full font-700 uppercase tracking-wide text-sm">Vedi il Menù</a>
-              <button type="button" onclick="window.openOrderModal()" class="js-order-btn btn-outline-light px-8 py-4 rounded-full font-700 uppercase tracking-wide text-sm inline-flex items-center gap-2">
+            <div class="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-4 max-w-xs sm:max-w-none mx-auto lg:mx-0">
+              <button type="button" onclick="window.openOrderModal()" class="js-order-btn btn-red px-8 py-4 rounded-full font-700 uppercase tracking-wide text-sm inline-flex items-center justify-center gap-2">
                 <iconify-icon icon="ph:shopping-bag-fill"></iconify-icon> Ordina ora
               </button>
+              <a href="https://www.google.com/maps/reserve/v/dine/c/AghEHZKES4Y?source=pa&amp;opi=89978449&amp;hl=it-IT" target="_blank" rel="noopener" class="btn-gold px-8 py-4 rounded-full font-700 uppercase tracking-wide text-sm inline-flex items-center justify-center gap-2">
+                <iconify-icon icon="ph:calendar-check-fill"></iconify-icon> Prenota un tavolo
+              </a>
             </div>
-            <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
+            <div class="mb-8">
+              <a href="#menu" class="inline-flex items-center gap-2 font-700 uppercase tracking-wide text-xs text-crema/80 hover:text-oro border-b border-oro/60 pb-1 transition-colors">Vedi il Menù <iconify-icon icon="ph:arrow-right-bold"></iconify-icon></a>
+            </div>
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3">
               <a href="tel:+390516320081" class="inline-flex items-center gap-2 font-700 text-crema hover:text-oro transition-colors">
                 <iconify-icon icon="ph:phone-fill" class="text-oro text-xl"></iconify-icon> 051 6320081
               </a>
@@ -212,25 +221,25 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          <div class="farina-card card-top-gold bg-white rounded-3xl border border-nero/10 p-8 reveal">
+          <div class="farina-card card-top-gold bg-white rounded-3xl border border-nero/10 p-8 reveal text-center md:text-left">
             <iconify-icon icon="ph:wheat-fill" class="text-4xl text-oro mb-4"></iconify-icon>
             <h3 class="font-display text-2xl font-700 mb-1">Normale</h3>
             <p class="text-nero/55 text-sm mb-4">Con glutine · 48 ore di lievito-maturazione. Il nostro impasto classico, leggero.</p>
             <span class="inline-block bg-sabbia text-nero font-700 text-xs uppercase tracking-wide px-3 py-1.5 rounded-full">Inclusa</span>
           </div>
-          <div class="farina-card card-top-gold bg-white rounded-3xl border border-nero/10 p-8 reveal" style="transition-delay:.08s">
+          <div class="farina-card card-top-gold bg-white rounded-3xl border border-nero/10 p-8 reveal text-center md:text-left" style="transition-delay:.08s">
             <iconify-icon icon="ph:wheat-fill" class="text-4xl text-oro mb-4"></iconify-icon>
             <h3 class="font-display text-2xl font-700 mb-1">Integrale</h3>
             <p class="text-nero/55 text-sm mb-4">Con glutine · da 48 a 72 ore. Più rustica e ricca di fibre, dal gusto pieno.</p>
             <span class="inline-block bg-sabbia text-nero font-700 text-xs uppercase tracking-wide px-3 py-1.5 rounded-full">+ € 1,50</span>
           </div>
-          <div class="farina-card card-top-gold bg-white rounded-3xl border border-nero/10 p-8 reveal" style="transition-delay:.16s">
+          <div class="farina-card card-top-gold bg-white rounded-3xl border border-nero/10 p-8 reveal text-center md:text-left" style="transition-delay:.16s">
             <iconify-icon icon="ph:wheat-fill" class="text-4xl text-oro mb-4"></iconify-icon>
             <h3 class="font-display text-2xl font-700 mb-1">Kamut</h3>
             <p class="text-nero/55 text-sm mb-4">Con glutine · da 48 a 72 ore. Grano khorasan, aroma dolce e digeribilità.</p>
             <span class="inline-block bg-sabbia text-nero font-700 text-xs uppercase tracking-wide px-3 py-1.5 rounded-full">+ € 2,00</span>
           </div>
-          <div class="farina-card card-top-gold bg-white rounded-3xl border border-nero/10 p-8 reveal" style="transition-delay:.24s">
+          <div class="farina-card card-top-gold bg-white rounded-3xl border border-nero/10 p-8 reveal text-center md:text-left" style="transition-delay:.24s">
             <iconify-icon icon="ph:leaf-fill" class="text-4xl text-verde mb-4"></iconify-icon>
             <h3 class="font-display text-2xl font-700 mb-1">Senza glutine</h3>
             <p class="text-nero/55 text-sm mb-4">Impasto senza glutine, preparato da Delizie Senza Glutine · su prenotazione.</p>
@@ -247,12 +256,12 @@
     <!-- SPECIALITÀ -->
     <section id="specialita" class="py-24 md:py-32 px-6 md:px-8 bg-sabbia">
       <div class="max-w-[1280px] mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-end text-center md:text-left mb-16 gap-6">
           <div class="reveal">
             <span class="text-pomodoro font-700 uppercase text-xs tracking-[0.3em] mb-3 block">Le nostre specialità</span>
             <h2 class="font-display text-4xl md:text-6xl font-700 leading-none">Tre anime, un solo gusto</h2>
           </div>
-          <p class="max-w-md text-nero/60 text-lg reveal">
+          <p class="max-w-md text-nero/60 text-lg reveal mx-auto md:mx-0">
             Dalla tradizione napoletana alle creazioni gourmet d'autore: ingredienti selezionati, cotti al momento e curati nel dettaglio.
           </p>
         </div>
@@ -261,7 +270,7 @@
           <article class="group relative overflow-hidden rounded-3xl h-[440px] reveal hover-lift">
             <img src="assets/img/classiche.jpg" alt="Pizza margherita napoletana con fiordilatte e basilico" class="spec-img w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-nero/90 via-nero/25 to-transparent"></div>
-            <div class="absolute inset-0 p-8 flex flex-col justify-end text-crema">
+            <div class="absolute inset-0 p-8 flex flex-col justify-end text-crema text-center md:text-left">
               <h3 class="font-display text-3xl font-700 mb-2">Le Napoletane</h3>
               <p class="text-sm text-crema/80">Margherita, marinara, diavola. La tradizione come dev'essere, sul nostro impasto leggero.</p>
             </div>
@@ -269,7 +278,7 @@
           <article class="group relative overflow-hidden rounded-3xl h-[440px] reveal hover-lift" style="transition-delay:.1s">
             <img src="assets/img/gourmet.jpg" alt="Pizza gourmet con prosciutto crudo, datterini e grana" class="spec-img w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-pomodorod/92 via-pomodorod/25 to-transparent"></div>
-            <div class="absolute inset-0 p-8 flex flex-col justify-end text-crema">
+            <div class="absolute inset-0 p-8 flex flex-col justify-end text-crema text-center md:text-left">
               <h3 class="font-display text-3xl font-700 mb-2">Le Gourmet d'Autore</h3>
               <p class="text-sm text-crema/85">Le firme di Davide Leoci: burrata, crudo, datterini, pomodori secchi e prodotti di stagione.</p>
             </div>
@@ -277,7 +286,7 @@
           <article class="group relative overflow-hidden rounded-3xl h-[440px] reveal hover-lift" style="transition-delay:.2s">
             <img src="assets/img/bianche.jpg" alt="Pizza bianca con rucola, bresaola e scaglie" class="spec-img w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-nero/90 via-nero/25 to-transparent"></div>
-            <div class="absolute inset-0 p-8 flex flex-col justify-end text-crema">
+            <div class="absolute inset-0 p-8 flex flex-col justify-end text-crema text-center md:text-left">
               <h3 class="font-display text-3xl font-700 mb-2">Le Bianche</h3>
               <p class="text-sm text-crema/80">Senza pomodoro, con fiordilatte, rucola, stracciatella e affettati di qualità.</p>
             </div>
@@ -426,7 +435,7 @@
     <!-- STORIA / CHEF -->
     <section id="storia" class="py-24 md:py-32 px-6 md:px-8 bg-nero text-crema overflow-hidden">
       <div class="max-w-[1280px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <div class="reveal order-2 lg:order-1">
+        <div class="reveal order-2 lg:order-1 text-center lg:text-left">
           <span class="text-oro font-700 uppercase text-xs tracking-[0.3em] mb-3 block">Chi siamo</span>
           <h2 class="font-display text-4xl md:text-6xl font-700 leading-tight mb-6">La pizza d'autore<br>di Davide Leoci</h2>
           <p class="text-crema/70 text-lg leading-relaxed mb-5">
@@ -456,18 +465,24 @@
     <!-- CONSEGNA / ORDINA ONLINE -->
     <section id="promo" class="py-24 md:py-32 px-6 md:px-8 bg-sabbia">
       <div class="max-w-5xl mx-auto rounded-[36px] overflow-hidden shadow-xl reveal grid md:grid-cols-2 items-stretch bg-gradient-to-br from-pomodoro to-pomodorod text-crema">
-        <div class="relative order-2 md:order-1 pt-16 pb-10 px-10 md:p-14 flex flex-col justify-center overflow-hidden">
+        <div class="relative order-2 md:order-1 pt-10 pb-10 px-6 sm:px-10 md:p-14 flex flex-col justify-center overflow-hidden text-center md:text-left">
           <div class="relative z-10">
             <span class="inline-block bg-crema text-pomodoro font-800 uppercase tracking-widest text-xs px-4 py-1.5 rounded-full mb-5">Asporto &amp; Domicilio</span>
             <h2 class="font-display text-4xl md:text-5xl font-800 leading-tight mb-5">Ordina online,<br>ricevi a casa.</h2>
-            <p class="text-crema/85 text-lg mb-8 max-w-md">Miglior consegna a domicilio a Castel Maggiore. Ordina la tua pizza d'autore dal sito o al telefono: la prepariamo con la farina che preferisci e te la portiamo calda.</p>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://pizzeriamediterraneo-castelmaggiore.eatbu.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-crema text-pomodoro px-7 py-4 rounded-full font-800 uppercase tracking-wide text-sm hover:bg-nero hover:text-crema transition-colors">
-                <iconify-icon icon="ph:cursor-click-fill"></iconify-icon> Ordina online
+            <p class="text-crema/85 text-lg mb-8 max-w-md mx-auto md:mx-0">Miglior consegna a domicilio a Castel Maggiore. Ordina la tua pizza d'autore dal sito o al telefono: la prepariamo con la farina che preferisci e te la portiamo calda.</p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-3">
+              <a href="https://pizzeriamediterraneo.order.app.hd.digital/menus" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-crema text-pomodoro px-7 py-4 rounded-full font-800 uppercase tracking-wide text-sm hover:bg-nero hover:text-crema transition-colors">
+                <iconify-icon icon="ph:cursor-click-fill"></iconify-icon> Ordina dal sito
               </a>
               <a href="tel:+390516320081" class="inline-flex items-center gap-2 btn-outline-light px-7 py-4 rounded-full font-800 uppercase tracking-wide text-sm">
                 <iconify-icon icon="ph:phone-fill"></iconify-icon> 051 6320081
               </a>
+            </div>
+            <p class="text-crema/70 text-[11px] uppercase tracking-[0.25em] mt-7 mb-3">Ordina anche su</p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-2.5">
+              <a href="https://www.justeat.it/restaurants-pizzeria-mediterraneo-castel-maggiore/menu" target="_blank" rel="noopener" class="platform-btn inline-flex items-center gap-2 px-5 py-3 rounded-full font-800 uppercase tracking-wide text-xs" style="background:#F36D00;color:#fff"><iconify-icon icon="ph:moped-fill" class="text-base"></iconify-icon> Just Eat</a>
+              <a href="https://deliveroo.it/it/menu/bologna/bologna-castel-maggiore/pizzeria-mediterraneo/?utm_medium=affiliate&amp;utm_source=google_maps_link&amp;fulfillment_type=DELIVERY" target="_blank" rel="noopener" class="platform-btn inline-flex items-center gap-2 px-5 py-3 rounded-full font-800 uppercase tracking-wide text-xs" style="background:#00CCBC;color:#00352f"><iconify-icon icon="ph:moped-fill" class="text-base"></iconify-icon> Deliveroo</a>
+              <a href="https://glovoapp.com/it/it/bologna/stores/pizzeria-mediterraneo-pizza-dautore-bol?utm_medium=organic&amp;utm_campaign=google_reserve_place_order_action&amp;utm_source=google" target="_blank" rel="noopener" class="platform-btn inline-flex items-center gap-2 px-5 py-3 rounded-full font-800 uppercase tracking-wide text-xs" style="background:#FFC244;color:#3a2a00"><iconify-icon icon="ph:moped-fill" class="text-base"></iconify-icon> Glovo</a>
             </div>
           </div>
         </div>
@@ -489,7 +504,7 @@
           <div class="text-center reveal">
             <div class="w-16 h-16 mx-auto rounded-full bg-nero text-oro flex items-center justify-center text-2xl mb-5"><iconify-icon icon="ph:cursor-click-fill"></iconify-icon></div>
             <h3 class="font-display text-2xl font-700 mb-2">1. Ordina</h3>
-            <p class="text-nero/60">Ordina <a href="https://pizzeriamediterraneo-castelmaggiore.eatbu.com" target="_blank" rel="noopener" class="text-pomodoro font-600">online dal sito</a> oppure chiama allo <a href="tel:+390516320081" class="text-pomodoro font-600">051 6320081</a>.</p>
+            <p class="text-nero/60">Ordina <a href="https://pizzeriamediterraneo.order.app.hd.digital/menus" target="_blank" rel="noopener" class="text-pomodoro font-600">online dal sito</a>, su Just Eat, Deliveroo o Glovo, oppure chiama allo <a href="tel:+390516320081" class="text-pomodoro font-600">051 6320081</a>.</p>
           </div>
           <div class="text-center reveal" style="transition-delay:.1s">
             <div class="w-16 h-16 mx-auto rounded-full bg-nero text-oro flex items-center justify-center text-2xl mb-5"><iconify-icon icon="ph:fire-fill"></iconify-icon></div>
@@ -508,24 +523,24 @@
     <!-- CONTATTI + MAPPA -->
     <section id="contatti" class="py-24 md:py-32 px-6 md:px-8 bg-sabbia">
       <div class="max-w-[1280px] mx-auto grid lg:grid-cols-2 gap-12 items-stretch">
-        <div class="reveal">
+        <div class="reveal text-center lg:text-left">
           <span class="text-pomodoro font-700 uppercase text-xs tracking-[0.3em] mb-3 block">Dove siamo</span>
           <h2 class="font-display text-4xl md:text-6xl font-700 mb-8">Vieni a trovarci</h2>
 
           <ul class="space-y-6 mb-8">
-            <li class="flex items-start gap-4">
+            <li class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-2 lg:gap-4">
               <iconify-icon icon="ph:map-pin-fill" class="text-2xl text-pomodoro mt-1"></iconify-icon>
               <div><p class="font-700">Indirizzo</p><p class="text-nero/60">Via Pablo Neruda 2/A, 40013 Castel Maggiore (BO)</p></div>
             </li>
-            <li class="flex items-start gap-4">
+            <li class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-2 lg:gap-4">
               <iconify-icon icon="ph:phone-fill" class="text-2xl text-pomodoro mt-1"></iconify-icon>
               <div><p class="font-700">Telefono</p><a href="tel:+390516320081" class="text-nero/60 hover:text-pomodoro">051 6320081</a> · <a href="tel:+393881633064" class="text-nero/60 hover:text-pomodoro">388 1633064</a></div>
             </li>
-            <li class="flex items-start gap-4">
+            <li class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-2 lg:gap-4">
               <iconify-icon icon="ph:envelope-simple-fill" class="text-2xl text-pomodoro mt-1"></iconify-icon>
               <div><p class="font-700">Email</p><a href="mailto:davide.leoci@libero.it" class="text-nero/60 hover:text-pomodoro break-all">davide.leoci@libero.it</a></div>
             </li>
-            <li class="flex items-start gap-4">
+            <li class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-2 lg:gap-4">
               <iconify-icon icon="ph:clock-fill" class="text-2xl text-pomodoro mt-1"></iconify-icon>
               <div>
                 <p class="font-700">Orari</p>
@@ -535,7 +550,8 @@
             </li>
           </ul>
 
-          <div class="flex flex-wrap gap-3">
+          <div class="flex flex-wrap justify-center lg:justify-start gap-3">
+            <a href="https://www.google.com/maps/reserve/v/dine/c/AghEHZKES4Y?source=pa&amp;opi=89978449&amp;hl=it-IT" target="_blank" rel="noopener" class="btn-gold inline-flex items-center gap-2 px-6 py-3 rounded-full font-700 text-sm"><iconify-icon icon="ph:calendar-check-fill"></iconify-icon> Prenota un tavolo</a>
             <a href="https://www.google.com/maps/dir/?api=1&destination=Via+Pablo+Neruda+2%2FA,+Castel+Maggiore+BO" target="_blank" rel="noopener" class="btn-red inline-flex items-center gap-2 px-6 py-3 rounded-full font-700 text-sm"><iconify-icon icon="ph:navigation-arrow-fill"></iconify-icon> Indicazioni</a>
             <a href="https://www.facebook.com/davideleocisensorypizzachef" target="_blank" rel="noopener" class="btn-outline inline-flex items-center gap-2 px-6 py-3 rounded-full font-700 text-sm"><iconify-icon icon="ph:facebook-logo-fill"></iconify-icon> Facebook</a>
             <a href="https://www.instagram.com/pizzeriamediterraneo_cm/" target="_blank" rel="noopener" class="btn-outline inline-flex items-center gap-2 px-6 py-3 rounded-full font-700 text-sm"><iconify-icon icon="ph:instagram-logo-fill"></iconify-icon> Instagram</a>
@@ -553,30 +569,31 @@
   <footer class="relative bg-nero text-crema pt-20 pb-10 px-6 md:px-8 border-t border-oro/15 overflow-hidden">
     <div class="relative z-10 max-w-[1280px] mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-        <div class="md:col-span-2">
-          <a href="#hero" class="brand items-start mb-6">
+        <div class="md:col-span-2 text-center md:text-left">
+          <a href="#hero" class="brand items-center md:items-start mb-6">
             <span class="brand-script text-4xl md:text-5xl">Mediterraneo</span>
             <span class="brand-rule w-full my-1"></span>
             <span class="brand-tag text-[9px]">Pizza d'Autore</span>
           </a>
-          <p class="text-crema/55 max-w-md leading-relaxed">Pizza d'autore a Castel Maggiore. Impasti a lunga lievitazione, farine selezionate e le creazioni gourmet di Davide Leoci. Il gusto per la qualità, in pizzeria o a domicilio.</p>
+          <p class="text-crema/55 max-w-md mx-auto md:mx-0 leading-relaxed">Pizza d'autore a Castel Maggiore. Impasti a lunga lievitazione, farine selezionate e le creazioni gourmet di Davide Leoci. Il gusto per la qualità, in pizzeria o a domicilio.</p>
         </div>
-        <div>
+        <div class="text-center md:text-left">
           <h5 class="font-700 uppercase tracking-[0.2em] text-xs mb-6 text-oro">Naviga</h5>
           <ul class="space-y-3">
             <li><a href="#farine" class="text-crema/60 hover:text-white transition-colors">Le Farine</a></li>
             <li><a href="#specialita" class="text-crema/60 hover:text-white transition-colors">Le Pizze</a></li>
             <li><a href="#menu" class="text-crema/60 hover:text-white transition-colors">Menù</a></li>
             <li><a href="#storia" class="text-crema/60 hover:text-white transition-colors">Chi Siamo</a></li>
-            <li><button type="button" onclick="window.openOrderModal()" class="js-order-btn text-oro hover:text-white transition-colors font-600 text-left">Ordina ora →</button></li>
+            <li><button type="button" onclick="window.openOrderModal()" class="js-order-btn text-oro hover:text-white transition-colors font-600">Ordina ora →</button></li>
+            <li><a href="https://www.google.com/maps/reserve/v/dine/c/AghEHZKES4Y?source=pa&amp;opi=89978449&amp;hl=it-IT" target="_blank" rel="noopener" class="text-oro hover:text-white transition-colors font-600">Prenota un tavolo →</a></li>
           </ul>
         </div>
-        <div>
+        <div class="text-center md:text-left">
           <h5 class="font-700 uppercase tracking-[0.2em] text-xs mb-6 text-oro">Contatti</h5>
           <ul class="space-y-3 text-crema/60">
             <li>Via Pablo Neruda 2/A<br>Castel Maggiore (BO)</li>
             <li><a href="tel:+390516320081" class="hover:text-white">051 6320081</a> · <a href="tel:+393881633064" class="hover:text-white">388 1633064</a></li>
-            <li class="flex gap-4 pt-2">
+            <li class="flex justify-center md:justify-start gap-4 pt-2">
               <a href="https://www.facebook.com/davideleocisensorypizzachef" target="_blank" rel="noopener" aria-label="Facebook" class="text-2xl hover:text-oro"><iconify-icon icon="ph:facebook-logo-fill"></iconify-icon></a>
               <a href="https://www.instagram.com/pizzeriamediterraneo_cm/" target="_blank" rel="noopener" aria-label="Instagram" class="text-2xl hover:text-oro"><iconify-icon icon="ph:instagram-logo-fill"></iconify-icon></a>
             </li>
@@ -593,7 +610,7 @@
   <!-- Popup Ordina -->
   <div id="order-modal" class="fixed inset-0 z-[100] hidden items-center justify-center px-4" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
     <div id="order-modal-backdrop" onclick="window.closeOrderModal()" class="absolute inset-0 bg-nero/75 backdrop-blur-sm"></div>
-    <div class="relative bg-crema rounded-3xl shadow-2xl w-full max-w-sm p-8 text-center">
+    <div class="relative bg-crema rounded-3xl shadow-2xl w-full max-w-sm p-7 sm:p-8 text-center max-h-[92svh] overflow-y-auto">
       <button type="button" id="order-modal-close" onclick="window.closeOrderModal()" aria-label="Chiudi" class="absolute top-4 right-4 w-9 h-9 rounded-full flex items-center justify-center text-nero/50 hover:text-nero hover:bg-sabbia transition-colors text-xl">
         <iconify-icon icon="lucide:x"></iconify-icon>
       </button>
@@ -603,16 +620,26 @@
         <span class="brand-tag on-light text-[8px]">Pizza d'Autore</span>
       </span>
       <h3 id="order-modal-title" class="font-display text-3xl font-700 mb-2">Come vuoi ordinare?</h3>
-      <p class="text-nero/55 text-sm mb-7">Scegli come completare il tuo ordine da Pizzeria Mediterraneo.</p>
+      <p class="text-nero/55 text-sm mb-6">Scegli come completare il tuo ordine da Pizzeria Mediterraneo.</p>
       <div class="flex flex-col gap-3">
-        <a href="tel:+390516320081" class="btn-red flex items-center justify-center gap-3 px-6 py-4 rounded-full font-700 uppercase tracking-wide text-sm">
+        <a href="https://pizzeriamediterraneo.order.app.hd.digital/menus" target="_blank" rel="noopener" class="btn-red flex items-center justify-center gap-3 px-6 py-4 rounded-full font-700 uppercase tracking-wide text-sm">
+          <iconify-icon icon="ph:cursor-click-fill" class="text-lg"></iconify-icon> Ordina dal sito
+        </a>
+        <p class="text-nero/40 text-[11px] uppercase tracking-[0.25em] mt-2">oppure su</p>
+        <a href="https://www.justeat.it/restaurants-pizzeria-mediterraneo-castel-maggiore/menu" target="_blank" rel="noopener" class="platform-btn flex items-center justify-center gap-3 px-6 py-3.5 rounded-full font-700 uppercase tracking-wide text-sm" style="background:#F36D00;color:#fff">
+          <iconify-icon icon="ph:moped-fill" class="text-lg"></iconify-icon> Just Eat
+        </a>
+        <a href="https://deliveroo.it/it/menu/bologna/bologna-castel-maggiore/pizzeria-mediterraneo/?utm_medium=affiliate&amp;utm_source=google_maps_link&amp;fulfillment_type=DELIVERY" target="_blank" rel="noopener" class="platform-btn flex items-center justify-center gap-3 px-6 py-3.5 rounded-full font-700 uppercase tracking-wide text-sm" style="background:#00CCBC;color:#00352f">
+          <iconify-icon icon="ph:moped-fill" class="text-lg"></iconify-icon> Deliveroo
+        </a>
+        <a href="https://glovoapp.com/it/it/bologna/stores/pizzeria-mediterraneo-pizza-dautore-bol?utm_medium=organic&amp;utm_campaign=google_reserve_place_order_action&amp;utm_source=google" target="_blank" rel="noopener" class="platform-btn flex items-center justify-center gap-3 px-6 py-3.5 rounded-full font-700 uppercase tracking-wide text-sm" style="background:#FFC244;color:#3a2a00">
+          <iconify-icon icon="ph:moped-fill" class="text-lg"></iconify-icon> Glovo
+        </a>
+        <a href="tel:+390516320081" class="btn-outline flex items-center justify-center gap-3 px-6 py-3.5 rounded-full font-700 uppercase tracking-wide text-sm mt-1">
           <iconify-icon icon="ph:phone-fill" class="text-lg"></iconify-icon> Chiama la pizzeria
         </a>
-        <a href="https://pizzeriamediterraneo-castelmaggiore.eatbu.com" target="_blank" rel="noopener" class="btn-gold flex items-center justify-center gap-3 px-6 py-4 rounded-full font-700 uppercase tracking-wide text-sm">
-          <iconify-icon icon="ph:cursor-click-fill" class="text-lg"></iconify-icon> Ordina online
-        </a>
       </div>
-      <p class="text-nero/40 text-xs mt-6">051 6320081 · Via Pablo Neruda 2/A, Castel Maggiore</p>
+      <p class="text-nero/40 text-xs mt-5">051 6320081 · Via Pablo Neruda 2/A, Castel Maggiore</p>
     </div>
   </div>
 
