@@ -54,17 +54,14 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Filtro categorie menù
+// Filtro categorie menù (gruppi)
 const catButtons = document.querySelectorAll('.cat-btn');
-const menuItems = document.querySelectorAll('[data-cat]');
+const menuGroups = document.querySelectorAll('.menu-group');
 catButtons.forEach(btn => {
   btn.addEventListener('click', () => {
-    const cat = btn.dataset.filter;
+    const g = btn.dataset.filter;
     catButtons.forEach(b => b.classList.toggle('is-active', b === btn));
-    menuItems.forEach(item => {
-      const show = cat === 'all' || item.dataset.cat === cat;
-      item.style.display = show ? '' : 'none';
-    });
+    menuGroups.forEach(el => el.classList.toggle('hidden', el.dataset.group !== g));
   });
 });
 

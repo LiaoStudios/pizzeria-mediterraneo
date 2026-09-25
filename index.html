@@ -272,7 +272,7 @@
             <div class="absolute inset-0 bg-gradient-to-t from-nero/90 via-nero/25 to-transparent"></div>
             <div class="absolute inset-0 p-8 flex flex-col justify-end text-crema text-center md:text-left">
               <h3 class="font-display text-3xl font-700 mb-2">Le Napoletane</h3>
-              <p class="text-sm text-crema/80">Margherita, marinara, diavola. La tradizione come dev'essere, sul nostro impasto leggero.</p>
+              <p class="text-sm text-crema/80">Margherita, marinara, napoli, salame piccante. La tradizione come dev'essere, sul nostro impasto leggero.</p>
             </div>
           </article>
           <article class="group relative overflow-hidden rounded-3xl h-[440px] reveal hover-lift" style="transition-delay:.1s">
@@ -295,135 +295,1045 @@
       </div>
     </section>
 
-    <!-- MENÙ -->
-    <!-- NB: voci e prezzi indicativi, DA CONFERMARE con il cliente prima del go-live -->
+    <!-- MENÙ — importato dal sistema di ordinazione (pizzeriamediterraneo.order.app.hd.digital) -->
     <section id="menu" class="py-24 md:py-32 px-6 md:px-8 bg-crema">
       <div class="max-w-[1280px] mx-auto">
-        <div class="text-center mb-14 reveal">
+        <div class="text-center mb-10 reveal">
           <span class="text-pomodoro font-700 uppercase text-xs tracking-[0.3em] mb-3 block">Il nostro menù</span>
-          <h2 class="font-display text-4xl md:text-6xl font-700">Scegli la tua pizza</h2>
+          <h2 class="font-display text-4xl md:text-6xl font-700 mb-4">Scegli la tua pizza</h2>
+          <p class="text-nero/60 text-lg max-w-2xl mx-auto">Il menù completo con i prezzi aggiornati, così come lo trovi nel nostro sistema di ordinazione.</p>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-3 mb-14">
-          <button class="cat-btn is-active px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-xs" data-filter="all">Tutte</button>
-          <button class="cat-btn px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-xs" data-filter="classiche">Classiche</button>
-          <button class="cat-btn px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-xs" data-filter="gourmet">Gourmet d'Autore</button>
-          <button class="cat-btn px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-xs" data-filter="bianche">Bianche</button>
-          <button class="cat-btn px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-xs" data-filter="kebab">Kebab &amp; Panini</button>
-          <button class="cat-btn px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-xs" data-filter="dolci">Dolci</button>
+        <div class="flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-8">
+          <button type="button" class="cat-btn is-active px-5 sm:px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-[11px] sm:text-xs" data-filter="pizze">Pizze</button>
+          <button type="button" class="cat-btn px-5 sm:px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-[11px] sm:text-xs" data-filter="formati">Giganti &amp; Mezzo Metro</button>
+          <button type="button" class="cat-btn px-5 sm:px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-[11px] sm:text-xs" data-filter="calzoni">Calzoni &amp; Focacce</button>
+          <button type="button" class="cat-btn px-5 sm:px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-[11px] sm:text-xs" data-filter="dolci">Pizze Dolci</button>
+          <button type="button" class="cat-btn px-5 sm:px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-[11px] sm:text-xs" data-filter="piatti">Piatti &amp; Insalate</button>
+          <button type="button" class="cat-btn px-5 sm:px-6 py-2.5 rounded-full font-700 uppercase tracking-wide text-[11px] sm:text-xs" data-filter="bevande">Bevande</button>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-4">
-          <!-- CLASSICHE -->
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="classiche">
-            <img src="assets/img/menu-margherita.jpg" alt="Margherita" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 6,50</span></div>
-              <p class="text-nero/55 text-sm mt-1">Pomodoro, fiordilatte, basilico, olio EVO.</p>
-            </div>
-          </div>
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="classiche">
-            <img src="assets/img/menu-marinara.jpg" alt="Marinara" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Marinara Leoci</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 6,00</span></div>
-              <p class="text-nero/55 text-sm mt-1">Pomodoro, aglio, origano, datterini, basilico, olio EVO.</p>
-            </div>
-          </div>
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="classiche">
-            <img src="assets/img/menu-diavola.jpg" alt="Diavola" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Diavola</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
-              <p class="text-nero/55 text-sm mt-1">Pomodoro, fiordilatte, salame piccante.</p>
-            </div>
-          </div>
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="classiche">
-            <img src="assets/img/menu-verdure.jpg" alt="Ortolana" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Ortolana</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
-              <p class="text-nero/55 text-sm mt-1">Pomodoro, fiordilatte, verdure grigliate di stagione.</p>
-            </div>
-          </div>
+        <div class="max-w-3xl mx-auto text-center bg-sabbia/70 rounded-2xl px-5 py-5 mb-12 text-sm text-nero/70 leading-relaxed space-y-2">
+          <p><strong class="text-nero">Impasto:</strong> normale incluso · integrale <span class="whitespace-nowrap">+€&nbsp;1,50</span> · kamut <span class="whitespace-nowrap">+€&nbsp;2,00</span> · senza&nbsp;glutine <span class="whitespace-nowrap">+€&nbsp;4,00</span> · doppio <span class="whitespace-nowrap">+€&nbsp;2,00</span></p>
+          <p><strong class="text-nero">Senza lattosio</strong> <span class="whitespace-nowrap">+€&nbsp;1,50</span> · <strong class="text-nero">Aggiunte</strong> da <span class="whitespace-nowrap">€&nbsp;1,00</span> a <span class="whitespace-nowrap">€&nbsp;1,50</span></p>
+        </div>
 
-          <!-- GOURMET D'AUTORE -->
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="gourmet">
-            <img src="assets/img/hero.jpg" alt="Datterini e burrata" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">La Descrizione di un Attimo</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 12,50</span></div>
-              <p class="text-nero/55 text-sm mt-1">Base rossa, burrata, datterini rossi e gialli, pomodori secchi, basilico.</p>
-            </div>
+      <div class="menu-group" data-group="pizze">
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Pizze Tradizionali</h3>
+            <p class="text-nero/55 text-sm mt-2">Con ogni pizza in omaggio un paninetto con mix di cioccolato bianco e nero</p>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
           </div>
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="gourmet">
-            <img src="assets/img/menu-treno.jpg" alt="Un treno per l'eternità" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Un Treno per l'Eternità</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 12,00</span></div>
-              <p class="text-nero/55 text-sm mt-1">Pomodoro, fiordilatte, speck, funghi freschi, granella.</p>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Schiacciata</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 4,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Olio extravergine, origano o rosmarino</p>
+              </div>
             </div>
-          </div>
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="gourmet">
-            <img src="assets/img/menu-crudo.jpg" alt="Crudo gourmet" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Epoca Vittoriana</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 13,00</span></div>
-              <p class="text-nero/55 text-sm mt-1">Prosciutto crudo, fiordilatte, granella di pistacchio, basilico.</p>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Marinara</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 5,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, aglio, olio extravergine d&#x27;oliva e origano</p>
+              </div>
             </div>
-          </div>
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="gourmet">
-            <img src="assets/img/menu-datterini.jpg" alt="Margherita gourmet" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita Leoci Gourmet</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 10,00</span></div>
-              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala, datterini gialli, basilico, olio EVO.</p>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Marinara Soft</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 5,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, olio extravergine d&#x27;oliva, origano e emulsione di basilico</p>
+              </div>
             </div>
-          </div>
-
-          <!-- BIANCHE -->
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="bianche">
-            <img src="assets/img/menu-burrata.jpg" alt="Bianca rucola e burrata" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Rucola &amp; Burrata</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 11,50</span></div>
-              <p class="text-nero/55 text-sm mt-1">Fiordilatte, crudo, rucola, burrata a crudo.</p>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/4.jpg" alt="Margherita" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 6,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella fiordilatte e basilico</p>
+              </div>
             </div>
-          </div>
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="bianche">
-            <img src="assets/img/bianche.jpg" alt="Bianca bresaola e rucola" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Bresaola &amp; Rucola</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 11,00</span></div>
-              <p class="text-nero/55 text-sm mt-1">Fiordilatte, bresaola, rucola, scaglie di grana, glassa.</p>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Napoli</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, acciughe e origano</p>
+              </div>
             </div>
-          </div>
-
-          <!-- KEBAB & PANINI -->
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="kebab">
-            <img src="assets/img/kebab.jpg" alt="Panino kebab" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Panino Kebab di Qualità</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 6,00</span></div>
-              <p class="text-nero/55 text-sm mt-1">Pane morbido, carne kebab, insalata, pomodoro, cipolla, salse.</p>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Funghi</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, funghi freschi oppure funghi trifolati</p>
+              </div>
             </div>
-          </div>
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="kebab">
-            <div class="w-20 h-20 rounded-xl bg-sabbiad flex items-center justify-center flex-shrink-0"><iconify-icon icon="ph:bowl-food-fill" class="text-3xl text-pomodoro"></iconify-icon></div>
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Piatto Kebab</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
-              <p class="text-nero/55 text-sm mt-1">Carne kebab, patatine fritte, insalata e salse.</p>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Carciofi</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e carciofi</p>
+              </div>
             </div>
-          </div>
-
-          <!-- DOLCI -->
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="dolci">
-            <img src="assets/img/dolci.jpg" alt="Pizza dolce alla frutta" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Pizza Dolce alla Frutta</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
-              <p class="text-nero/55 text-sm mt-1">Crema, frutta fresca di stagione, granella e glassa.</p>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Melanzane</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e melanzane</p>
+              </div>
             </div>
-          </div>
-          <div class="menu-item flex items-center gap-5 py-4 border-b border-nero/10 reveal" data-cat="dolci">
-            <div class="w-20 h-20 rounded-xl bg-sabbiad flex items-center justify-center flex-shrink-0"><iconify-icon icon="ph:cookie-fill" class="text-3xl text-pomodoro"></iconify-icon></div>
-            <div class="flex-1">
-              <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Pizza Dolce Nutella</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
-              <p class="text-nero/55 text-sm mt-1">Impasto dolce, crema alla nocciola, zucchero a velo.</p>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Zucchine</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e zucchine</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Peperoni</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e peperoni</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Gorgonzola</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e gorgonzola dolce</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Prosciutto</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e prosciutto cotto</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Crudo</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e prosciutto crudo</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Wurstel</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e wurstel</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Salsiccia</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e salsiccia</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Salame Piccante 🌶️</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e salame piccante</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Salame Dolce</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e salame dolce</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Bufala</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala e basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Pancetta</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e pancetta steccata stufata</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Speck</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e speck</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Porcini</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e funghi porcini</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Romana</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, acciughe, capperi e origano</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Pugliese</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, olive, cipolla e origano</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Siciliana</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, capperi, acciughe, olive e origano</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">4 Stagioni</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, prosciutto cotto, salsiccia, funghi e carciofi</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">4 Formaggi</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, fontina, emmental, gorgonzola dolce e grana</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Capricciosa</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, prosciutto cotto, funghi trifolati, carciofi e olive</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/29.jpg" alt="Verdure" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Verdure</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, peperoni, radicchio, zucchine, melanzane, patate e funghi freschi</p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Pizze Mediterranee Rosse</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Parmigiana</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, melanzane e grana</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Tonnata</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, tonno, capperi, cipolla e olive</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Taormina</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, pomodorini, mozzarella di bufala, melanzane, pecorino e basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Ischia</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala, melanzane, tonno e pomodori secchi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Pizze Mediterranee Bianche</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Caprese</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, pomodorini, olio extravergine e origano</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Saracena</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, pomodorini e grana</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Ligure</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, patate, pecorino dolce, olio e basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Mediterranea</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, pomodorini, rucola e grana</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/39.jpg" alt="Primavera" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Primavera</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Schiacciata, mozzarella di bufala, pomodorini all&#x27;uscita e rucola</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Speciale</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella di bufala, pomodorini, grana, olio extravergine e basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Claudia 🌶️</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella di bufala, pomodorini, melanzane, salsiccia, salame piccante e grana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Pizze Sfiziose Rosse</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Nduja</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, Mozzarella Fiordilatte, Nduja</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Contadina</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, peperoni, salsiccia e cipolla</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Bolognese 🌶️</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, salsiccia, prosciutto cotto, salame piccante e wurstel</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Rustica</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, salsiccia, scamorza affumicata e rucola</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Gustosa</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala, melanzane, peperoni, ricotta salata all&#x27;uscita e olio extravergine d&#x27;oliva</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Un Treno Per L&#x27;Eternità</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, speck, brie e funghi freschi</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Due Torri</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, radicchio, funghi chiodini e gorgonzola dolce</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Pizza Kebab</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella e kebab</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Purgatorio</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, salsiccia, patate al forno, stracchino e tabasco</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Inferno 🌶️</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, salame piccante, cipolla, olive verdi e tabasco</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Regina</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala, pomodorini, acciughe, olio extravergine d&#x27;oliva e basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Sfiziosa</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, salsiccia, patate e olio tartufato</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Andy</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, salsiccia, funghi porcini e grana</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Trevigiana</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, radicchio, salame piccante e gorgonzola dolce</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Alpina</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, speck, tomino e rucola</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Montanara</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, funghi porcini, speck e rucola</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Gorky</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, speck, gorgonzola e noci</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Gold</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, salsiccia, patate, funghi porcini e emulsione di basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Violetta</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, speck, gorgonzola, funghi freschi, funghi porcini, funghi chiodini e funghi trifolati</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Fungaia</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, funghi freschi, funghi porcini, funghi chiodini e funghi trifolati</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Sogno</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala, funghi freschi e grana</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Strade Perdute</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, salame dolce, melanzane, peperoni, rucola e glassa balsamica</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Pizze Sfiziose Bianche</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Lì dove il mare luccica</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozz. di bufala, pomodorini, acciughe, cipolla, funghi chiodini, basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Vecchia Napoli</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, salsiccia e friarielli</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Affumicata</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, scamorza affumicata, speck e funghi freschi</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Olio Tartufato</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, funghi freschi, grana e olio tartufato</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Carbonara</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, pancetta, uovo e grana</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Paradiso</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella di bufala, olive verdi, funghi freschi, prosciutto crudo e basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Un Soffio di Vento</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella di bufala, pomodorini e prosciutto crudo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Pizze d&#x27;Autore</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/82.jpg" alt="Marinara Leoci Gourmet" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Marinara Leoci Gourmet</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, pomodorini gialli interi in uscita, emulsione al basilico, un tocco di pepe e origano</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/83.jpg" alt="Margherita Leoci Gourmet" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita Leoci Gourmet</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala, pomodorini gialli interi in uscita, emulsione al basilico e un tocco di pepe</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/85.jpg" alt="Perla del Golfo" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Perla del Golfo</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Provola di mozzarella di bufala, pomodorini, funghi porcini, olio extravergine d&#x27;oliva e basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/87.jpg" alt="Alle Pendici dell&#x27;Etna" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Alle Pendici dell&#x27;Etna</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala, pomodorini, olive, cipolla e ricotta all&#x27;uscita</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/89.jpg" alt="Senza Tempo" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Senza Tempo</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella di bufala, pesto di pistacchi, mortadella e granella di pistacchi</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Dante Alighieri</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala, pancetta, rucola, grana e olio tartufato</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/91.jpg" alt="Davide Leoci" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Davide Leoci</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala, speck in forno, scamorza, gorgonzola, ricotta salata e basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">La Descrizione di un Attimo</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 10,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella di bufala, pesto di pistacchi, prosciutto crudo, pomodori secchi in uscita, grana, emulsione al basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Area 051</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 10,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pizza a forma di disco volatane con all&#x27;interno pomodoro, mozzarella, salame piccante, olive verdi, pomodorini, grana e glassa decorativa</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">L&#x27;Ultimo Treno Della Notte</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, tomino, mozzarella bufala in uscita, pomodorini in uscita, emulsione di basilico e un tocco di pepe</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Fronte del Porto</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala, pomodorini, speck in forno, scamorza e granella di pistacchio</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Frammenti di Memoria</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 10,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella di bufala in uscita, pomodorini rossi, pomodorini gialli, pomodori secchi, pepe e emulsione al basilico</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-group hidden" data-group="formati">
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Pizze Giganti</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita Gigante</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 14,00</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita Gigante con 1 Ingrediente</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 16,00</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita Gigante con 2 Ingredienti</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 18,00</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita Gigante con 3 Ingredienti</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 20,00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Pizze Mezzo Metro</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita Mezzo Metro</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 17,00</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita Mezzo Metro con 1 Ingrediente</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 18,00</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita Mezzo Metro con 2 Ingredienti</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 20,00</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Margherita Mezzo Metro con 3 Ingredienti</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 22,00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Mini Metro</h3>
+            <p class="text-nero/55 text-sm mt-2">Per due persone</p>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Base Margherita</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 10,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">1 ingrediente</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Base Margherita</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 12,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">2 ingredienti</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Base Margherita</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 14,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">3 ingredienti</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-group hidden" data-group="calzoni">
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Calzoni</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Calzone</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, prosciutto cotto e funghi trifolati</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Calzone Farcito</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pomodoro, mozzarella, prosciutto cotto, funghi trifolati, carciofi e olive</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Calzone Alto Adige</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, speck, scamorza e funghi chiodini</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Calzone Tortellone</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, prosciutto cotto, stracchino, olive e basilico</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/119.jpg" alt="Calzone Classe e Delicatezza" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Calzone Classe e Delicatezza</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella di bufala, stracchino, prosciutto cotto, pomodorini, rucola e aceto balsamico</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Focacce Farcite</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Focaccia Semplice</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella e prosciutto cotto</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Focaccia Stuzzicante</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, speck, grana e rucola</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Focaccia alle Verdure</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, verdure miste e grana</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Focaccia Romagnola</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, stracchino, prosciutto cotto e rucola</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Focaccia Mix di Bosco</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Mozzarella, funghi freschi, funghi porcini, funghi chiodini, speck e grana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-group hidden" data-group="dolci">
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <p class="text-nero/55 text-sm">Creazioni uniche di Davide Leoci</p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/101.jpg" alt="L&#x27;Altra Faccia della Luna" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">L&#x27;Altra Faccia della Luna</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Metà nutella, metà cioccolato bianco, granella di nocciole, pioggia di praline colorate, rifinitura al pistacchio e zucchero a velo</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              <img src="assets/img/menu/103.jpg" alt="Raggio di Sole" loading="lazy" width="80" height="80" class="w-20 h-20 rounded-xl object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Raggio di Sole</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Pizza a forma di sole, nutella, banana, scaglie di mela, kiwi o fragole a seconda della stagione, granella di nocciole, rifinitura di frutti di bosco e zucchero a velo</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Epoca Vittoriana</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Cioccolato bianco, granella di nocciole, zucchero a velo e rifinitura al pistacchio</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">La Dolce Vita</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 9,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Nutella, banana, rifinitura ai frutti di bosco e zucchero a velo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-group hidden" data-group="piatti">
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Piatti</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Piatto Kebab</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 10,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Kebab, insalata, patate al forno, pomodorini, salsa yogurt e salsa piccante a parte</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Piatto Caprese</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Caprese di bufala campana, insalata e pomodorini</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Insalate</h3>
+            <p class="text-nero/55 text-sm mt-2">Con condimenti e pane compresi</p>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Topazio</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Insalata mista, pomodorini, olive, tonno e grana a scaglie</p>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Diamante</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 7,50</span></div>
+              <p class="text-nero/55 text-sm mt-1">Insalata mista, mozzarella di Bufala, pomodorini, olive, tonno</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Kebab</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Panino Kebab di Qualità</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 8,00</span></div>
+              <p class="text-nero/55 text-sm mt-1">Insalata, Carne Kebab di qualita&#x27;, Patate, Cipolla, Pomodoro, Salsa Yogurt, Salsa Piccante</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-group hidden" data-group="bevande">
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Bevande</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Tè pesca</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 2,60</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Acqua Naturale 1 litro</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 2,50</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Acqua Naturale 50cl</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 1,50</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Acqua Frizzante 50cl</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 1,50</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Coca Cola in Lattina</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 2,60</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Coca Cola Zero in Lattina</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 2,60</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Fanta in Lattina</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 2,60</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Sprite in Lattina</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 2,60</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Tè limone</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 2,60</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Bibita in Pet 1.5L</h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 4,00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <div class="text-center mb-6 mt-2">
+            <h3 class="font-display text-3xl md:text-4xl font-700">Birre</h3>
+            <span class="block w-14 h-[2px] bg-oro mx-auto mt-4"></span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Moretti in Lattina 33cl <span class="align-middle text-[10px] font-700 border border-nero/30 text-nero/60 rounded px-1.5 py-0.5 ml-1">18+</span></h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 2,60</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Corona in Bottiglia 33cl <span class="align-middle text-[10px] font-700 border border-nero/30 text-nero/60 rounded px-1.5 py-0.5 ml-1">18+</span></h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 3,50</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Heineken in Bottiglia 66cl <span class="align-middle text-[10px] font-700 border border-nero/30 text-nero/60 rounded px-1.5 py-0.5 ml-1">18+</span></h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 4,00</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Moretti in Bottiglia 66cl <span class="align-middle text-[10px] font-700 border border-nero/30 text-nero/60 rounded px-1.5 py-0.5 ml-1">18+</span></h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 4,00</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Ichnusa in Bottiglia 66cl <span class="align-middle text-[10px] font-700 border border-nero/30 text-nero/60 rounded px-1.5 py-0.5 ml-1">18+</span></h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 4,00</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Birra Senza Glutine in Bottiglia 33cl <span class="align-middle text-[10px] font-700 border border-nero/30 text-nero/60 rounded px-1.5 py-0.5 ml-1">18+</span></h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 4,00</span></div>
+              </div>
+            </div>
+            <div class="menu-item flex items-start gap-4 py-4 border-b border-nero/10">
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex justify-between items-baseline gap-3"><h4 class="font-display text-xl font-700">Ichnusa non Filtrata in Bottiglia 50cl <span class="align-middle text-[10px] font-700 border border-nero/30 text-nero/60 rounded px-1.5 py-0.5 ml-1">18+</span></h4><span class="text-pomodoro font-700 whitespace-nowrap">€ 4,00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <p class="text-center text-nero/45 text-xs mt-10 mb-8">Voci e prezzi indicativi e soggetti a variazione. Per il menù completo, gli ingredienti del giorno e le proposte gourmet firmate Davide Leoci chiama allo <a href="tel:+390516320081" class="text-pomodoro font-600">051 6320081</a>.</p>
+        <p class="text-center text-nero/45 text-xs mt-6 mb-8">Prezzi e piatti come da nostro sistema di ordinazione; le aggiunte e le varianti si scelgono direttamente in fase d'ordine. Per informazioni chiama allo <a href="tel:+390516320081" class="text-pomodoro font-600">051 6320081</a>.</p>
         <div class="text-center">
           <button type="button" onclick="window.openOrderModal()" class="js-order-btn btn-red inline-flex items-center gap-2 px-9 py-4 rounded-full font-700 uppercase tracking-wide text-sm">
             <iconify-icon icon="ph:shopping-bag-fill"></iconify-icon> Ordina ora
@@ -515,6 +1425,20 @@
             <div class="w-16 h-16 mx-auto rounded-full bg-nero text-oro flex items-center justify-center text-2xl mb-5"><iconify-icon icon="ph:moped-fill"></iconify-icon></div>
             <h3 class="font-display text-2xl font-700 mb-2">3. Ritira o ricevi</h3>
             <p class="text-nero/60">Passa in Via Neruda 2/A oppure scegli la consegna a domicilio. Buon appetito!</p>
+          </div>
+        </div>
+        <div class="mt-14 max-w-3xl mx-auto grid sm:grid-cols-2 gap-4 reveal">
+          <div class="bg-white rounded-2xl border border-nero/10 p-6 text-center">
+            <iconify-icon icon="ph:moped-fill" class="text-3xl text-pomodoro mb-2"></iconify-icon>
+            <p class="font-700">Consegna a domicilio</p>
+            <p class="text-nero/60 text-sm mt-1">12:00–14:30 · 18:00–22:00</p>
+            <p class="text-nero/45 text-xs mt-1">Pronto in circa 40 minuti</p>
+          </div>
+          <div class="bg-white rounded-2xl border border-nero/10 p-6 text-center">
+            <iconify-icon icon="ph:shopping-bag-fill" class="text-3xl text-pomodoro mb-2"></iconify-icon>
+            <p class="font-700">Asporto</p>
+            <p class="text-nero/60 text-sm mt-1">12:00–14:00 · 18:30–22:00</p>
+            <p class="text-nero/45 text-xs mt-1">Pronto in circa 25 minuti</p>
           </div>
         </div>
       </div>
