@@ -1,0 +1,114 @@
+/* Pizzeria Mediterraneo — Pizza d'Autore · Castel Maggiore
+   Palette: crema/sabbia base · nero contrasto · oro accento brand · pomodoro CTA */
+:root {
+  --crema: #FBF6EC;
+  --sabbia: #EFE3CC;
+  --sabbia-scura: #E0CFB0;
+  --nero: #171310;
+  --nero-soft: #211A14;
+  --oro: #C6A253;
+  --oro-chiaro: #DDBE7E;
+  --oro-scuro: #A5823A;
+  --pomodoro: #C0432B;
+  --pomodoro-scuro: #99331F;
+  --verde: #5B7040;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: var(--crema);
+  color: var(--nero);
+  overflow-x: hidden;
+}
+
+.font-display { font-family: 'Playfair Display', Georgia, serif; }
+.font-script  { font-family: 'Yellowtail', 'Playfair Display', cursive; }
+
+/* ---------- Brand wordmark ---------- */
+.brand { display: inline-flex; flex-direction: column; align-items: center; line-height: 1; }
+.brand-script {
+  font-family: 'Yellowtail', cursive;
+  color: var(--oro);
+  letter-spacing: .5px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);
+  line-height: .9;
+}
+.brand-tag {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .42em;
+  font-weight: 700;
+  color: var(--crema);
+}
+.brand-tag.on-light { color: var(--nero); }
+.brand-rule { height: 1px; background: linear-gradient(90deg, transparent, var(--oro), transparent); }
+
+/* warm texture behind hero text */
+.warm-bg {
+  background-color: var(--nero);
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(198,162,83,.12) 0%, transparent 42%),
+    radial-gradient(circle at 88% 88%, rgba(192,67,43,.10) 0%, transparent 45%);
+}
+
+/* Scroll reveal */
+.reveal { opacity: 0; transform: translateY(28px); transition: all .8s cubic-bezier(.23,1,.32,1); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* Hover lift */
+.hover-lift { transition: transform .35s cubic-bezier(.34,1.56,.64,1), box-shadow .35s ease; }
+.hover-lift:hover { transform: translateY(-6px); box-shadow: 0 24px 48px -24px rgba(23,19,16,.4); }
+
+/* Buttons */
+.btn-red {
+  background: var(--pomodoro); color: #fff;
+  transition: background .25s ease, transform .25s ease, box-shadow .25s ease;
+  box-shadow: 0 10px 24px -14px rgba(192,67,43,.9);
+}
+.btn-red:hover { background: var(--pomodoro-scuro); transform: translateY(-2px); }
+
+.btn-gold {
+  background: var(--oro); color: var(--nero);
+  transition: background .25s ease, transform .25s ease;
+}
+.btn-gold:hover { background: var(--oro-chiaro); transform: translateY(-2px); }
+
+.btn-outline {
+  border: 1.5px solid var(--nero); color: var(--nero);
+  transition: all .25s ease;
+}
+.btn-outline:hover { background: var(--nero); color: var(--crema); }
+
+.btn-outline-light {
+  border: 1.5px solid var(--crema); color: var(--crema);
+  transition: all .25s ease;
+}
+.btn-outline-light:hover { background: var(--crema); color: var(--nero); }
+
+/* Menu category buttons */
+.cat-btn { border: 1.5px solid rgba(23,19,16,.18); transition: all .2s ease; }
+.cat-btn:hover { border-color: var(--pomodoro); color: var(--pomodoro); }
+.cat-btn.is-active { background: var(--nero); border-color: var(--nero); color: var(--oro); }
+
+/* Flour (farina) cards */
+.farina-card { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
+.farina-card:hover { transform: translateY(-6px); box-shadow: 0 26px 50px -28px rgba(23,19,16,.5); border-color: var(--oro); }
+
+/* specialty image treatment */
+.spec-img { filter: saturate(.92) contrast(1.03); transition: filter .6s ease, transform .8s ease; }
+.group:hover .spec-img { filter: saturate(1.12); transform: scale(1.05); }
+
+/* gold top rule on cards */
+.card-top-gold { position: relative; }
+.card-top-gold::before { content:""; position:absolute; top:0; left:0; right:0; height:3px; background: linear-gradient(90deg, var(--oro), var(--oro-scuro)); }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .hover-lift, .spec-img { transition: none; }
+}
